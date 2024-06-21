@@ -1,26 +1,23 @@
-//Factors 
-import java.util.*;
+//Find the perfect square root of the number
+import java.util.*; 
 class program1{
-	static int factors(int num){
-		int count=0; 
+	static int squareroot(int num){
+		int val=0;
 		for(int i=1; i<=num; i++){
-			if(num%i==0){
-				count++;
+			if(i*i == num){
+				val=i;
 			}
 		}
-		return count;
+		return val;
 	}
 	public static void main(String[] args){
-	       	Scanner sc = new Scanner(System.in);
-		System.out.print("Enter the number :");
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number :");
 		int num = sc.nextInt();
-
-		int count = factors(num);
-
-		System.out.println(count);
+		int sqrt = squareroot(num);
+		System.out.println(sqrt);
 	}
 }
 
-	
-		
+
 
